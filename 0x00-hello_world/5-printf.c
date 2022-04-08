@@ -1,8 +1,7 @@
 #include <stdio.h>
 
 /**
- *main: starts the program
- *Description: uses printf to output strings 
+ *main - starts the program and uses the printf 
  *Return: 0
  */
 
