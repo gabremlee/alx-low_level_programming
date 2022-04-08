@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- *main - program start to print hexadecimal base 0123456789abcdef, using putchar
+ *main - program start to print hexadecimal base using putchar
  *Return: 0
  */
 
