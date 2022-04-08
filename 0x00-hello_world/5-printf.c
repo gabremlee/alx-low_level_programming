@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- *main - starts the program and uses the printf 
+ *main - starts the program and uses the printf
  *Return: 0
  */
 
