@@ -8,4 +8,12 @@
  */
 int _putchar(char c);
 
+
+
+/**
+ *print_alphabet writes out all lowercase alphabets
+ *has no return value
+ */
+void print_alphabet(void);
+
 #endif
