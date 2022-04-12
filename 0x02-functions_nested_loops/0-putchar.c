@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
- *program starts
- *returns 0
+ *program starts to print putchar with newline
+ *Returns 0
  */
 
 int _putchar(char c);
 
-int main()
+int main(void)
 {
 	_putchar('_');
 	_putchar('p');
