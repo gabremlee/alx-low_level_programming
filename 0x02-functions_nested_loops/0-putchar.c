@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- *program starts to print putchar with newline
- *Returns 0
+ *main - program starts to print putchar with newline
+ *Returns: 0
  */
 
 
