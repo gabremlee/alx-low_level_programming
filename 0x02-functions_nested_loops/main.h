@@ -16,4 +16,12 @@ int _putchar(char c);
  */
 void print_alphabet(void);
 
+
+/**
+ *print_alphabet_x10 prints lower case 10 times 
+ *has no return value
+ */
+void print_alphabet_x10(void);
+
+
 #endif
