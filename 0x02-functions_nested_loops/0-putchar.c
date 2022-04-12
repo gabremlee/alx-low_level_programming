@@ -2,7 +2,7 @@
 
 /**
  *main - program starts to print putchar with newline
- *Returns: 0
+ *Return: 0
  */
 
 
