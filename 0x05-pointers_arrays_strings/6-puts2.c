@@ -25,11 +25,11 @@ int _strlen(char *s)
 }
 
 /**
- * puts_half - prints half of a string, followed by a new line
+ * put2 - prints half of a string, followed by a new line
  * @str: string to print
  */
 
-void puts_half(char *str)
+void puts2(char *str)
 {
 	int idx;
 	int len = _strlen(str);
