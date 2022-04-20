@@ -59,7 +59,7 @@ void rev_string(char *s)
 
 	int b, d = 0;
 
-	char pp[];
+	char pp[a];
 
 	_pute(s, pp);
 
