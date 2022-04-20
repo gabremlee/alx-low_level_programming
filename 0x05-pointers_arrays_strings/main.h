@@ -23,7 +23,7 @@ void swap_int(int *a, int *b);
 /**
  *_strlen - function to get length of given string 
  *@s: string to process
- *Return: no return value
+ *Return: length of string as int
  */
 
 int _strlen(char *s);
