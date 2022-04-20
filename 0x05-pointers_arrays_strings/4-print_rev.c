@@ -6,12 +6,6 @@
  *Return: no return value
  */
 
-/**
- *print_rev - function to print string in reverse
- *@s: pointer of type char
- *Return: no return value
- */
-
 int _strlen(char *s)
 {
 	int b = 0, c;
@@ -29,6 +23,12 @@ int _strlen(char *s)
 	}
 	return (b);
 }
+
+/**
+ *print_rev - function to print string in reverse
+ *@s: pointer of type char
+ *Return: no return value
+ */
 
 void print_rev(char *s)
 {
