@@ -55,7 +55,7 @@ void _pute(char *str, char pp[])
 
 void rev_string(char *s)
 {
-	int a = _strlen(s);
+	const int a = _strlen(s);
 
 	int b, d = 0;
 
