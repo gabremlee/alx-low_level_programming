@@ -25,29 +25,6 @@ int _strlen(char *s)
 }
 
 /**
- *_puts - function to print strings to standard output
- *@str: string to process of type char
- *Return: no return value
- */
-
-void _pute(char *str, char pp[])
-{
-	int a = 0;
-
-	for (a = 0 ; a < 1000 ; a++)
-	{
-		if (*(str + a) >= 0 && *(str + a))
-		{
-			pp[a] = (*(str + a));
-		}
-		else
-		{
-			break;
-		}
-	}
-}
-
-/**
  *rev_string - function to print string in reverse
  *@s: pointer of type char
  *Return: no return value
@@ -55,17 +32,15 @@ void _pute(char *str, char pp[])
 
 void rev_string(char *s)
 {
-	const int a = _strlen(s);
+	int a = _strlen(s);
 
 	int b, d = 0;
 
-	char pp[a];
-
-	_pute(s, pp);
+	char *t = *s;
 
 	for (b = a - 1 ; b >= 0 ; b--)
 	{
-	 	*(s + d) = pp[b];
+	 	*(s + d) = *(t + b);
 		d++;
 	}
 	_putchar('\n');
