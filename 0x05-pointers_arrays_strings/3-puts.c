@@ -12,7 +12,7 @@ void _puts(char *str)
 
 	for (a = 0 ; a < 1000 ; a++)
 	{
-		if (*(s + 0) >= 0 && *(s + c))
+		if (*(str + a) >= 0 && *(str + a))
 		{
 			_putchar(*(str + a));
 		}
