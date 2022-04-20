@@ -9,4 +9,13 @@
 
 void reset_to_98(int *n);
 
+/**
+ *swap_int - function to swap values of two pointers 
+ *@a: first parameter
+ *@b: second  parameter
+ *Return: no return value
+ */
+
+void swap_int(int *a, int *b);
+
 #endif
