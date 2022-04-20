@@ -44,4 +44,12 @@ void _puts(char *str);
 
 void print_rev(char *s);
 
+/**
+ *rev_string - function to print string in reverse
+ *@s: pointer of type char
+ *Return: no return value
+ */
+
+void rev_string(char *s);
+
 #endif
