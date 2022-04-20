@@ -36,8 +36,8 @@ void rev_string(char *s)
 
 	int b, d = 0;
 
-	char *t;
-       
+	char *t = "gabriel";
+
 	for (b = 0 ; b < a ; b++)
 	{
 		*(t + b) = *(s + b);
