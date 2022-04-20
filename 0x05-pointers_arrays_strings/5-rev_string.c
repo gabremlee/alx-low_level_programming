@@ -36,16 +36,11 @@ void rev_string(char *s)
 
 	int b, d = 0;
 
-	char *t;
-
-	for (b = 0 ; b < a ; b++)
-	{
-		*(t + b) = *(s + b);
-	}
+	char t[a];
 
 	for (b = a - 1 ; b >= 0 ; b--)
 	{
-	 	*(s + d) = *(t + b);
+	 	*(s + d) = t[b];
 		d++;
 	}
 }
