@@ -36,7 +36,7 @@ void rev_string(char *s)
 
 	int b, d = 0;
 
-	char *t = "gabriel";
+	char *t;
 
 	for (b = 0 ; b < a ; b++)
 	{
@@ -48,5 +48,4 @@ void rev_string(char *s)
 	 	*(s + d) = *(t + b);
 		d++;
 	}
-	_putchar('\n');
 }
