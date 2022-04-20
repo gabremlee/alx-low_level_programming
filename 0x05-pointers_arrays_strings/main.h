@@ -1,6 +1,8 @@
 #ifndef MAIN_H
 #define MAIN_H
 
+int _putchar(char c);
+
 /**
  *reset_to_98 - function to update the value a pointer points to
  *@*n - takes in a pointer n for input
