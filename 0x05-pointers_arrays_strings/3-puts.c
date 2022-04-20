@@ -12,7 +12,14 @@ void _puts(char *str)
 
 	for (a = 0 ; a < 1000 ; a++)
 	{
-		_putchar(*(str + a));
+		if (*(s + 0) >= 0 && *(s + c))
+		{
+			_putchar(*(str + a));
+		}
+		else
+		{
+			break;
+		}
 	}
 	_putchar('\n');
 }
