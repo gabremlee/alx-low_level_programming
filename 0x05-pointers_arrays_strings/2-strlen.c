@@ -8,7 +8,8 @@
 
 int _strlen(char *s)
 {
-	int b = 0, c; 
+	int b = 0, c;
+
 	for (c = 0 ; c < 1000 ; c++)
 	{
 		if (*(s + 0) >= 0 && *(s + c))
