@@ -28,4 +28,12 @@ void swap_int(int *a, int *b);
 
 int _strlen(char *s);
 
+/**
+ *_puts - function that prints integers  
+ *@str: string to process of type char
+ *Return: no return value
+ */
+
+void _puts(char *str);
+
 #endif
