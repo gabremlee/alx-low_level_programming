@@ -31,7 +31,7 @@ int _strlen(char *s)
 
 void puts2(char *str)
 {
-	int idx;
+	int idx, a = 0;
 	int len = _strlen(str);
 
 	/* find the index to start depending on even/odd amount of strlen */
@@ -40,10 +40,9 @@ void puts2(char *str)
 	else
 		idx = (len / 2);
 
-	while (idx < len)
+	for (a = 0 ; a < idx ; a++)
 	{
-		_putchar(*(str + idx));
-		idx++;
+		_putchar(*(str + a));
 	}
 	_putchar('\n');
 }
