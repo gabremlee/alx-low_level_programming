@@ -25,7 +25,7 @@ int _strlen(char *s)
 }
 
 /**
- * put2 - prints half of a string, followed by a new line
+ * puts2 - prints half of a string, followed by a new line
  * @str: string to print
  */
 
