@@ -38,7 +38,10 @@ void rev_string(char *s)
 
 	char *t;
        
-	t = *s;
+	for (b = 0 ; b < a ; b++)
+	{
+		*(t + b) = *(s + b);
+	}
 
 	for (b = a - 1 ; b >= 0 ; b--)
 	{
