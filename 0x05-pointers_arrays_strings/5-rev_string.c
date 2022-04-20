@@ -32,15 +32,15 @@ int _strlen(char *s)
 
 void rev_string(char *s)
 {
-	int a = _strlen(s);
+	int i = 0;
+	int j = (_strlen(s) - 1);
+	char tmp;
 
-	int b, d = 0;
-
-	char t[a];
-
-	for (b = a - 1 ; b >= 0 ; b--)
+	while (i < j)
 	{
-	 	*(s + d) = t[b];
-		d++;
+		tmp = s[i];
+		s[i] = s[j];
+		s[j] = tmp;
+		i++, j--;
 	}
 }
