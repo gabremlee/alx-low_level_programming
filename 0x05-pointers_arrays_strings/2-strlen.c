@@ -8,6 +8,17 @@
 
 int _strlen(char *s)
 {
-	int b = sizeof(*s);
+	int b = 0, c;
+	for (c = 0 ; c < 100 ; c++ )
+	{
+		if (*(s + 0) >= 0 && *(s + c))
+		{
+			b++;
+		}
+		else
+		{
+			break;
+		}
+	}
 	return (b);
 }
