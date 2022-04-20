@@ -6,20 +6,27 @@
  *Return: no return value
  */
 
-int mystrlen(char *p)
+int _strlen(char *s)
 {
-    int c=0;
-    while(*p!='\0')
-    {
-        c++;
-        *p++;
-    }
-    return(c);
+	int b = 0, c;
+
+	for (c = 0 ; c < 1000 ; c++)
+	{
+		if (*(s + 0) >= 0 && *(s + c))
+		{
+			b++;
+		}
+		else
+		{
+			break;
+		}
+	}
+	return (b);
 }
 
 void print_rev(char *s)
 {
-	int a = mystrlen(*s);
+	int a = _strlen(s);
 
 	int b;
 
