@@ -30,7 +30,7 @@ int _strlen(char *s)
  *Return: no return value
  */
 
-void _puts(char *str, char pp[])
+void _pute(char *str, char pp[])
 {
 	int a = 0;
 
@@ -59,14 +59,14 @@ void rev_string(char *s)
 
 	int b, d = 0;
 
-	char pp[a];
+	char pp[];
 
-	_puts(s, pp);
+	_pute(s, pp);
 
 	for (b = a - 1 ; b >= 0 ; b--)
 	{
 	 	*(s + d) = pp[b];
-		d++
+		d++;
 	}
 	_putchar('\n');
 }
