@@ -1,49 +1,27 @@
 #include "main.h"
 
 /**
- *_strlen - function to get length of given string
- *@s: string to process
- *Return: no return value
- */
-
-int _strlen(char *s)
-{
-	int b = 0, c;
-
-	for (c = 0 ; c < 1000 ; c++)
-	{
-		if (*(s + 0) >= 0 && *(s + c))
-		{
-			b++;
-		}
-		else
-		{
-			break;
-		}
-	}
-	return (b);
-}
-
-/**
- *_strcat - a function to concatenate strings of char arrays 
- *@dest: the string to concatenate to
- *@src: the string to be concatenated
- *Return: a pointer to the resulting string
+ * _strcat - concatenate two strings
+ * @dest: string to be appended to
+ * @src: string to append
+ * Return: concatenated string
  */
 
 char *_strcat(char *dest, char *src)
 {
-	int a, b, c;
+	int i = 0;
+	int j = 0;
 
-	a = _strlen(dest);
+	while (dest[i] != '\0')
+		i++;
 
-	b = _strlen(src);
-
-	for (c = 0; c > b; c++)
+	while (src[j] != '\0')
 	{
-		*(dest + a) = *(src + c);
-		a++;
+		dest[i] = src[j];
+		i++;
+		j++;
 	}
+	dest[i] = '\0';
 
-	return dest;
+	return (dest);
 }
