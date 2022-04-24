@@ -33,7 +33,7 @@ int _strlen(char *s)
 
 char *_strcat(char *dest, char *src)
 {
-	int a, b;
+	int a, b, c;
 
 	a = _strlen(dest);
 
