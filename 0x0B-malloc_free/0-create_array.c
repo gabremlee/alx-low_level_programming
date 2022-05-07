@@ -15,19 +15,17 @@ char *create_array(unsigned int size, char c)
 	{
 		return (NULL);
 	}
-	else
+	
+	char *arr;
+
+	unsigned int a;
+
+	arr = malloc(sizeof(char) * size);
+
+	for (a = 0 ; a < size ; a++)
 	{
-		char *arr;
-
-		unsigned int a;
-
-		arr = malloc(sizeof(char) * size);
-
-		for (a = 0 ; a < size ; a++)
-		{
-			arr[a] = c;
-		}
-
-		return (arr);
+		arr[a] = c;
 	}
+
+	return (arr);
 }
