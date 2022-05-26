@@ -7,7 +7,7 @@
  * Return: The computed Total
  */
 
-int Total_listint(listint_t *head)
+int sum_listint(listint_t *head)
 {
 	int Total = 0;
 	
