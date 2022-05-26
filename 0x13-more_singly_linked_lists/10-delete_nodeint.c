@@ -21,20 +21,20 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 	{
 		for (i = 0; i < index - 1 && prv != NULL; i++)
 		{
-			prv = prv->nxt;
+			prv = prv->next;
 		}
 	}
 
-	if (prv == NULL || (prv->nxt == NULL && index != 0))
+	if (prv == NULL || (prv->next == NULL && index != 0))
 	{
 		return (-1);
 	}
 
-	nxt = prv->nxt;
+	nxt = prv->next;
 
 	if (index != 0)
 	{
-		prv->nxt = nxt->nxt;
+		prv->next = nxt->next;
 		free(nxt);
 	}
 	else
