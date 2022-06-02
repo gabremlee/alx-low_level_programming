@@ -1,35 +1,34 @@
-#include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
-#include <fcntl.h>
-#include <unistd.h>
-#include <stddef.h>
 #include "main.h"
+
+/**
+ * read_textfile - Reads a text file and prints it to the POSIX
+ * standard output
+ * @filename: File from which to read text
+ * @letters: Number of letters to read
+ *
+ * Return: The actual number of letters it could read/print
+ */
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
+	int fd;
+	char *buf;
+	ssize_t readcount, writecount;
+
 	if (filename == NULL)
-		return 0;
-	
-	int fd1, byco;
-	char *c[letters];
+		return (0);
 
-	fd1 = open(filename,O_RDWR);
+	fd = open(filename, O_RDONLY);
 
-	if (fd1 == -1)
-		return 0;
+	if (fd == -1)
+		return (0);
+	buf = malloc(sizeof(char) * letters);
+	if (buf == NULL)
+		return (0);
+	readcount = read(fd, buf, letters);
+	writecount = write(STDOUT_FILENO, buf, readcount);
 
-	byco = read(fd1,&c,letters);
-
-	int wri = 0;      
-
-	wri = write(1,&c,byco);
-
-	if (byco == -1)
-		return 0;
-
-	if (wri == -1)
-		return 0;
-
-	return byco;
-}	
+	close(fd);
+	free(buf);
+	return (writecount);
+}
