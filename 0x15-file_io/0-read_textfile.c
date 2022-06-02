@@ -12,7 +12,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return 0;
 	
 	int fd1, byco;
-	char c[letters];
+	char *c[letters];
 
 	fd1 = open(filename,O_RDWR);
 
@@ -21,15 +21,14 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	byco = read(fd1,&c,letters);
 
-	write(1,&c,letters);
+	int wri = 0;      
+
+	wri = write(1,&c,byco);
 
 	if (byco == -1)
 		return 0;
 
-	//if (wri == -1)
-	//	return 0;
-
-	if (byco < letters)
+	if (wri == -1)
 		return 0;
 
 	return byco;
