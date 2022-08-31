@@ -1,4 +1,31 @@
+#include <stddef.h>
+#include <stdlib.h>
+#include <stdio.h>
 #include "main.h"
+#include <stdbool.h>
+
+/**
+ *check - function to check for characters other than 1 or 0
+ *@c: string to search from
+ *Return: True if only 1 and 0 present else false
+ **/
+
+bool check(const char *c)
+{
+        while(*c != '\0')
+        {
+                if(*c != '1')
+                {
+                        if(*c != '0')
+                        {
+                                return 0;
+                        }
+                }
+                *c++;
+        }
+
+        return 1;
+}
 
 /**
  *len - function to get length of string
@@ -6,7 +33,7 @@
  *Return: length of string
  */
 
-int len(char *p)
+int len(const char *p)
 {
         int a = 0;
 
@@ -16,7 +43,7 @@ int len(char *p)
                 *p++;
         }
 
-        return (a);
+        return a;
 }
 
 /**
@@ -52,34 +79,38 @@ int power(int a, int b)
  *Return: Decimal equivalent of binary
  */
 
+
 unsigned int binary_to_uint(const char *b)
 {
-	int dec = 0, a;
-	if(*b == NULL)
-		exit(0);
-	
-	while(*b != '\0')
-	{
-		if(*b != '1' || *b != '0')
-			exit(0);
 
-	}
+        unsigned int dec = 0;
 
-	int a = len(b)-1;
-
-	
+        if(*b == NULL)
+        {
+                return 0;
+        }
 
 
-        while(*b != '\0')
+        if(!(check(b)))
+        {
+                return 0;
+        }
+
+
+        int a = len(b)-1;
+
+
+
+ 	while(*b != '\0')
         {
                 if(*b == '1')
                 {
                         dec += power(2,a);
                 }
 
-                *p++;
+                *b++;
                 a--;
         }
 
         return dec;
-
+}
