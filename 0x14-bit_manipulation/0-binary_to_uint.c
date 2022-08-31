@@ -10,13 +10,13 @@
  *Return: True if only 1 and 0 present else false
  **/
 
-bool check(const char *c)
+bool check( const char *c)
 {
-        while(*c != '\0')
+        while( *c != '\0')
         {
-                if(*c != '1')
+                if( *c != '1')
                 {
-                        if(*c != '0')
+                        if( *c != '0')
                         {
                                 return 0;
                         }
@@ -33,11 +33,11 @@ bool check(const char *c)
  *Return: length of string
  */
 
-int len(const char *p)
+int len( const char *p)
 {
         int a = 0;
 
-        while(*p != '\0')
+        while( *p != '\0')
         {
                 a++;
                 *p++;
@@ -53,10 +53,10 @@ int len(const char *p)
  *Return: power calculated
  */
 
-int power(int a, int b)
+int power( int a, int b)
 {
         int sum;
-        if(b > 0)
+        if( b > 0)
         {
                 sum = a;
         }else
@@ -64,7 +64,7 @@ int power(int a, int b)
                 sum = 1;
         }
 
-        while(b > 1)
+        while( b > 1)
         {
                 sum *= a;
                 b--;
@@ -80,7 +80,7 @@ int power(int a, int b)
  */
 
 
-unsigned int binary_to_uint(const char *b)
+unsigned int binary_to_uint( const char *b)
 {
 
         unsigned int dec = 0;
@@ -91,7 +91,7 @@ unsigned int binary_to_uint(const char *b)
         }
 
 
-        if(!(check(b)))
+        if( !(check(b)) )
         {
                 return 0;
         }
@@ -101,7 +101,7 @@ unsigned int binary_to_uint(const char *b)
 
 
 
- 	while(*b != '\0')
+ 	while( *b != '\0' )
         {
                 if(*b == '1')
                 {
