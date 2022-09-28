@@ -4,4 +4,4 @@ SRC := $(wildcard *.c)
 all: build
 
 build:
-	${CC} main.c school.c -o school
+	${CC} ${SRC} -o school
