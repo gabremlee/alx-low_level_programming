@@ -1,7 +1,7 @@
 CC = gcc
-SRC := $(*.c)
+SRC := $(wildcard *.c)
 
 all: build
 
 build:
-	${CC} main.c $< -o school
+	${CC} main.c school.c -o school
