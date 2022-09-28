@@ -1,7 +1,7 @@
 CC = gcc
-SRC := school.c
+SRC := $(*.c)
 
 all: build
 
 build:
-	${CC} main.c ${SRC} -o school
+	${CC} main.c $< -o school
